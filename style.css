@@ -1,30 +1,19 @@
 html, body{
   background: #dee1f3;
-}
-
-:root {
-  /* 根字体随屏幕宽度自动调整，最小 14px，最大 20px */
-  font-size: clamp(14px, 1.2vw + 0.5rem, 20px);
-}
-
-body{
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  font-size: 1rem; /* 页面文字以 rem 为单位 */
-  line-height: 1.6;
-  padding: 0 1rem;
-  -webkit-text-size-adjust: 100%;
+  
 }
 
 *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
 }
+
 
 #b{
   position: fixed;
   height: 100%;
   width: 100%;
+  
 }
 
 .bb{
@@ -41,42 +30,43 @@ body{
 }
 .bbbb{
   width: 200%;
-  height: 20%;
-  transform: rotate(45deg);
+  height: 20%;transform: rotate(45deg);
   background: #d0c5bf;
 }
 
 p, h4{
-  padding: 0.625rem; /* 10px */
+  padding: 10px;
   color: #fff;
-  margin-left: 0.625rem;
-  margin-right: 0.625rem;
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
 
 .cc{
   width: 90%;
   border-radius: 10px;
-  border: 0.125rem solid #a5c3ff; /* 2px */
+  border: 2px solid #a5c3ff;
   margin: auto;
+
 }
 
 .c{
   margin: auto;
   width: 80%;
   background: rgba(0, 0, 0, 0.5);
-  padding: 0.625rem; /* 10px */
+  padding: 10px;
   backdrop-filter: blur(30px);
-  margin: 0.625rem auto;
-  margin-top: 1.25rem; /* 20px */
+  margin: 10px auto;
+ margin-top: 20px;
 }
 
 .qx{
   text-align: right;
-  margin-bottom: 0.3125rem; /* 5px */
+  margin-bottom: 5px;
 }
 
 .bt{
-  font-size: 0.95rem; /* 95% */
+  font-size: 95%;
 }
 
 a p:hover{
@@ -85,10 +75,4 @@ a p:hover{
 
 a{
   text-decoration: none;
-}
-
-/* 小屏幕时略微增加根字体以提升可读性 */
-@media (max-width: 480px) {
-  :root { font-size: clamp(16px, 2.2vw + 0.5rem, 22px); }
-  .c{ width: 94%; }
 }
